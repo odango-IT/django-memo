@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="alert alert-danger mt-5" role="alert">
+  本当に削除しますか？
+</div>
+<form action="" method="post">
+{% csrf_token %}
+<input class="btn btn-danger" type="submit" value="削除">
+</form>
+{% endblock %}

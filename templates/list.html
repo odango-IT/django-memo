@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+{% for post in post_list %}
+<div class="card mt-3">
+  <div class="card-body">
+    <a href="{% url 'detail' post.pk %}">{{post.title}}</a>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
